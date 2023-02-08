@@ -15,13 +15,33 @@ main {
 }
 main h1 {
 	font-size: 150%;
+	color: var(--global-color-1)
 }
 main h2 {
 	color: var(--global-color-1);
-	font-size: 130%;
+	font-size: 170%;
+	text-indent: 30px;
 }
 main h3 {
-	font-size: 105%;
+	font-size: 130%;
+	font-style: italic;
+	text-indent: 30px;
+	color: var(--global-color-1);
 }
 
 /* the styles for the footer */
+aside a:link, aside a:focus {
+	font-style: italic;
+}
+
+footer p {
+	text-align: center;
+}
+
+.shadow {
+	text-shadow: 3px 3px 7px var(--global-color-1);
+}
+
+:root {
+	--global-color-1: #800000;
+}
