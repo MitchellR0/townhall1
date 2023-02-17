@@ -1,74 +1,106 @@
+/* custom property */
+:root {
+	--global-color-1: #800000;
+}
+
 * {
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-html {
-    background-color: lightsteelblue;
-}
-
+/* the styles for the elements */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    max-width: 1000px;
-    width: 100%;
-    border: 3px solid steelblue;
-    margin: auto;
-    background-color: white;
+    margin-left: auto;
+	width: 600px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
-
-h1, h2, h3, h4 {
-    margin: .75em 1em;
+a:focus, a:hover {
+	font-style: italic;
 }
+/* the styles for the header */
 
-p {
-    margin: .75em;
-}
-
-header {
-    border-bottom: 3px solid steelblue;
-    background-image: linear-gradient(white, lightsteelblue)
+body header {
+	padding: 1.5em 2em;
+	border-bottom: 3px solid #931420;
+	background-image: linear-gradient(#f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 
 header h2 {
-    font-size: 250%;
-    font-style: italic;
-    color: steelblue;
-    text-shadow: 3px 3px 7px steelblue;
+	font-size: 175%;
+	color: var(--global-color-1);
 }
-
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
 header img {
-    float: left;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
 }
-header h2, header h3 {
-    padding-left: em;
+.shadow {
+	text-shadow: 2px 2px 2px var(--global-color-1);
 }
-
+/* the styles for the main content */
 main {
-    clear: left;
+	clear: left;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+main blockquote {
+	font-style: italic;
 }
 
+main h1 {
+	font-size: 150%;
+	padding: .3em 0;
+	border: 3px solid #931420;
+	border-radius: 10px;
+	box-shadow: 3px 3px black;
+}
+main h2 {
+	color: var(--global-color-1);
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 .25em 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the footer */
 footer {
-    background-color: steelblue;
-    padding: 15px 0;
+	background-color: #931420;
 }
 
 footer p {
-    font-size: 75%;
-    text-align: center;
-    color: white;
-    margin-top: 50px;
+	text-align: center;
+	padding: 1em 0;
+	color: white;
 }
 
-section a:link, section a:visited {
-    color:maroon
-}
-section a:hover, section a:focus {
-    color:steelblue
-}
-
-aside a:link, aside a:visited {
-    color:steelblue
-}
-aside a:hover, aside a:focus {
-    color: maroon
+html {
+	background-color: white;
 }
