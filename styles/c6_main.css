@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -17,6 +17,14 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+
+h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin: 0;
+}
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
@@ -46,12 +54,6 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the main content */
-main {
-	clear: left;
-}
-main {
-	padding: 0 30px;
-}
 main h1 {
 	font-size: 150%;
 	padding: .3em 0;
@@ -100,20 +102,38 @@ article h3 {
 
 /* the styles for the aside */
 
+aside {
+	padding-bottom: 20px;
+}
+
 aside h3 {
 	font-size: 105%;
-	padding-bottom: .25em;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 215px;
+
 }
 aside img {
 	padding-bottom: 1em;
 }
 
+.class {
+	float: right;
+}
+
 /* the styles for the footer */
 footer {
 	background-color: #931420;
+	clear: both;
 }
 footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+section {
+	width: 525px;
+	float: right;
+	padding: 0 20px, 20px, 20px;
 }
